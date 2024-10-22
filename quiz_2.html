@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style_quiz1.css">
+    <script src="JS/script_quiz2.js"></script>
+    <title>Quiz de Profissões</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="cabecalho1">Quiz Profissional</h1>
+        <h1 class="cabecalho2">Descubra o profissional que existe em você !</h1>
+
+        <img src="imagens/logo3.png" class="logo">
+        <nav>
+            <a href="quizes.html"></a>
+            <img class="menu-icon" src="icons/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
+            <a href="quizes.html">
+                <button class="account-icon">Voltar</button>
+            </a>
+            <a href="#" onclick="logout()">
+                <img class="logout-icon" src="icons/logout_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </a>
+
+
+        </nav>
+
+
+    </header>
+
+    <main>
+        <div class="button-container">
+            <div class="questao-container" id="questao1">
+                <div class="questao">
+                    <h2>1. Quando você enfrenta um problema complexo, qual é a sua abordagem?</h2>
+                    <label><input type="radio" name="questao1" value="a"> a. Desmembro o problema em partes menores e
+                        resolvo uma de cada vez.</label><br>
+                    <label><input type="radio" name="questao1" value="b"> b. Procuro padrões e conexões para encontrar
+                        uma solução rápida.</label><br>
+                    <label><input type="radio" name="questao1" value="c"> c. Busco consultar pessoas com mais
+                        experiência para obter insights.</label><br>
+                    <label><input type="radio" name="questao1" value="d"> d. Tento abordagens criativas e inovadoras
+                        para encontrar soluções alternativas.</label>
+                </div>
+            </div>
+       
+
+        <div class="questao-container" id="questao2" style="display:none;">
+            <div class="questao">
+                <h2>2. Quando você recebe uma tarefa nova, o que faz primeiro?</h2>
+                <label><input type="radio" name="questao2" value="a"> a. Organizo a equipe e divido as
+                    responsabilidades.</label><br>
+                <label><input type="radio" name="questao2" value="b"> b. Estudo todos os detalhes para garantir que não
+                    haja erros.</label><br>
+                <label><input type="radio" name="questao2" value="c"> c. Penso em maneiras diferentes de realizar a
+                    tarefa.</label><br>
+                <label><input type="radio" name="questao2" value="d"> d. Converso com colegas para obter opiniões e
+                    ideias.</label>
+            </div>
+        </div>
+
+        <div class="questao-container" id="questao3" style="display:none;">
+            <div class="questao">
+                <h2>3. Qual é o seu ambiente de trabalho ideal?</h2>
+                <label><input type="radio" name="questao3" value="a"> a. Um ambiente onde posso tomar decisões e
+                    liderar.</label><br>
+                <label><input type="radio" name="questao3" value="b"> b. Um local calmo, onde posso me concentrar nos
+                    detalhes.</label><br>
+                <label><input type="radio" name="questao3" value="c"> c. Um espaço dinâmico, cheio de inspiração e
+                    liberdade.</label><br>
+                <label><input type="radio" name="questao3" value="d"> d. Um escritório aberto onde posso interagir com
+                    todos.</label>
+            </div>
+        </div>
+
+        <div class="questao-container" id="questao4" style="display:none;">
+            <div class="questao">
+                <h2>4. Como você lida com prazos apertados?</h2>
+                <label><input type="radio" name="questao4" value="a"> a. Delego tarefas e me certifico de que todos
+                    estejam cumprindo o cronograma.</label><br>
+                <label><input type="radio" name="questao4" value="b"> b. Planejo cuidadosamente para garantir que tudo
+                    seja entregue no prazo.</label><br>
+                <label><input type="radio" name="questao4" value="c"> c. Encontro soluções rápidas e criativas para
+                    evitar atrasos.</label><br>
+                <label><input type="radio" name="questao4" value="d"> d. Comunique-se com todos para manter a equipe
+                    alinhada.</label>
+            </div>
+        </div>
+
+        <div class="questao-container" id="questao5" style="display:none;">
+            <div class="questao">
+                <h2>5. Você prefere trabalhar:</h2>
+                <label><input type="radio" name="questao5" value="a"> a. Liderando uma equipe.</label><br>
+                <label><input type="radio" name="questao5" value="b"> b. Analisando dados ou processos.</label><br>
+                <label><input type="radio" name="questao5" value="c"> c. Criando novas ideias ou projetos.</label><br>
+                <label><input type="radio" name="questao5" value="d"> d. Em colaboração com outras pessoas.</label>
+            </div>
+        </div>
+
+        <div class="questao-container" id="questao6" style="display:none;">
+            <div class="questao">
+                <h2>6. O que você acha mais estimulante em um trabalho?</h2>
+                <label><input type="radio" name="questao6" value="a"> a. Seguir um plano bem definido e atingir metas
+                    estabelecidas.</label><br>
+                <label><input type="radio" name="questao6" value="b"> b. Resolver problemas complexos e superar desafios
+                    inesperados.</label><br>
+                <label><input type="radio" name="questao6" value="c"> c. Trabalhar em equipe e colaborar em projetos
+                    conjuntos.</label><br>
+                <label><input type="radio" name="questao6" value="d"> d. Desenvolver novas ideias e criar soluções
+                    inovadoras.</label>
+            </div>
+        </div>
+
+        <div class="questao-container" id="questao7" style="display:none;">
+            <div class="questao">
+                <h2>7. Qual é a sua principal motivação no trabalho?</h2>
+                <label><input type="radio" name="questao7" value="a"> a. Conduzir e inspirar uma equipe.</label><br>
+                <label><input type="radio" name="questao7" value="b"> b. Resolver problemas e analisar
+                    dados.</label><br>
+                <label><input type="radio" name="questao7" value="c"> c. Criar e inovar.</label><br>
+                <label><input type="radio" name="questao7" value="d"> d. Colaborar e ajudar os outros.</label>
+            </div>
+        </div>
+
+            <button id="btnProximo" onclick="mostrarProxima()"><img src="icons/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="" srcset=""></button> <!-- Botão para próxima pergunta -->
+        </div>
+
+        <div id="resultados" style="display:none;"></div>
+    </main>
+
+    <footer>
+        <p>&copy; [2024] [QUIZ PERFIL PROFISSIONAL]. Todos os direitos reservados.
+            <br>Termos de Uso | Política de Privacidade | Contato
+            <br> Siga-nos nas redes sociais.
+        </p>
+    </footer>
+
+    <!-- Modais -->
+    <!-- Modal para perfil Analítico e Resolutivo -->
+<div id="myModalResolucao" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModalResolucao()">&times;</span>
+        <h3>PROFISSÕES SUGERIDAS: PERFIL ANALÍTICO E RESOLUTIVO</h3>
+        <h4>Você possui uma forte capacidade de análise e resolução de problemas. Esse perfil se destaca em áreas que exigem raciocínio lógico e tomada de decisões estratégicas.</h4>
+        <h3>PROFISSÕES RECOMENDADAS</h3>
+        <ul>
+            <li>Engenheiro</li>
+            <li>Analista de Sistemas</li>
+            <li>Contador</li>
+            <li>Engenheiro de Software</li>
+            <li>Consultor Financeiro</li>
+        </ul>
+        <h3>ÁREAS DE DESENVOLVIMENTO</h3>
+        <h4>Trabalhar na flexibilidade emocional pode ser útil em situações que exigem mais adaptabilidade e improvisação.</h4>
+    </div>
+</div>
+
+<!-- Modal para perfil Estruturado e Organizado -->
+<div id="myModalOrganiza" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModalOrganiza()">&times;</span>
+        <h3>PROFISSÕES SUGERIDAS: PERFIL ESTRUTURADO E ORGANIZADO</h3>
+        <h4>Você é metódico e valoriza a ordem, planejamento e execução de tarefas com disciplina. Profissões que exigem organização e gestão são ideais para você.</h4>
+        <h3>PROFISSÕES RECOMENDADAS</h3>
+        <ul>
+            <li>Gerente de Projetos</li>
+            <li>Administrador</li>
+            <li>Engenheiro de Produção</li>
+            <li>Auditor</li>
+            <li>Gestor de Operações</li>
+        </ul>
+        <h3>ÁREAS DE DESENVOLVIMENTO</h3>
+        <h4>Adaptar-se a mudanças e ser flexível pode ajudar em ambientes dinâmicos e imprevisíveis.</h4>
+    </div>
+</div>
+
+<!-- Modal para perfil Social e Comunicativo -->
+<div id="myModalColaboracao" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModalColaboracao()">&times;</span>
+        <h3>PROFISSÕES SUGERIDAS: PERFIL SOCIAL E COMUNICATIVO</h3>
+        <h4>Você tem grande facilidade em se comunicar e colaborar com os outros. Profissões que exigem interação social, empatia e trabalho em equipe são adequadas para você.</h4>
+        <h3>PROFISSÕES RECOMENDADAS</h3>
+        <ul>
+            <li>Professor</li>
+            <li>Psicólogo</li>
+            <li>Relações Públicas</li>
+            <li>Consultor de Vendas</li>
+            <li>Gestor de Recursos Humanos</li>
+        </ul>
+        <h3>ÁREAS DE DESENVOLVIMENTO</h3>
+        <h4>Desenvolver habilidades para trabalhar sozinho pode ser benéfico para manter o equilíbrio em ambientes onde a interação social é limitada.</h4>
+    </div>
+</div>
+
+<!-- Modal para perfil Criativo e Inovador -->
+<div id="myModalCriatividade" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModalCriatividade()">&times;</span>
+        <h3>PROFISSÕES SUGERIDAS: PERFIL CRIATIVO E INOVADOR</h3>
+        <h4>Você possui uma mente criativa e inovadora. Carreiras que envolvem criação, inovação e novas ideias são ideais para o seu perfil.</h4>
+        <h3>PROFISSÕES RECOMENDADAS</h3>
+        <ul>
+            <li>Designer Gráfico</li>
+            <li>Publicitário</li>
+            <li>Arquiteto</li>
+            <li>Desenvolvedor de Jogos</li>
+            <li>Artista Plástico</li>
+        </ul>
+        <h3>ÁREAS DE DESENVOLVIMENTO</h3>
+        <h4>Equilibrar a criatividade com habilidades práticas e planejamento pode ser útil para garantir a execução eficaz das suas ideias.</h4>
+    </div>
+</div>
+
+
+</body>
+
+</html>

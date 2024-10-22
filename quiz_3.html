@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Profissional</title>
+    <link rel="stylesheet" href="CSS/style_quiz1.css">
+    <script src="JS/script_quiz3.js"></script>
+ 
+</head>
+    <body>
+    
+        <header>
+            <h1 class="cabecalho1">Quiz Profissional</h1>
+            <h1 class="cabecalho2">Descubra o profissional que existe em você !</h1>
+    
+            <img src="imagens/logo3.png" class="logo">
+            <nav>
+                <a href="quizes.html"></a>
+                <img class="menu-icon" src="icons/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="Menu Icon">
+                </a>
+                <a href="quizes.html">
+                    <button class="account-icon">Voltar</button>
+                </a>
+                <a href="#" onclick="logout()">
+                    <img class="logout-icon" src="icons/logout_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </a>
+                
+                
+            </nav>
+    
+    
+        </header>
+<main>
+    <h2 class="tituloteste">Descubra seu perfil psicologico</h2>
+    <div class="button-container">
+        <div class="questao-container" id="questao1">
+            <div class="questao">
+                <h2>1. Como você lida com situações de alto estresse?</h2>
+                <label><input type="radio" name="questao1" value="a"> a. Tento manter a calma e lidar com o problema racionalmente.</label><br>
+                <label><input type="radio" name="questao1" value="b"> b. Sinto-me ansioso, mas tento me concentrar na solução.</label><br>
+                <label><input type="radio" name="questao1" value="c"> c. Fico emocionalmente abalado e evito a situação até me sentir mais seguro.</label><br>
+                <label><input type="radio" name="questao1" value="d"> d. Converso com outras pessoas para aliviar a tensão e buscar apoio.</label>
+            </div>
+        </div>
+        
+        <div class="questao-container" id="questao2" style="display:none;">
+            <div class="questao">
+                <h2>2. Como você reage diante de um desafio inesperado?</h2>
+                <label><input type="radio" name="questao2" value="a"> a. Vejo como uma oportunidade de aprendizado e crescimento.</label><br>
+                <label><input type="radio" name="questao2" value="b"> b. Tento avaliar todas as opções antes de tomar uma decisão.</label><br>
+                <label><input type="radio" name="questao2" value="c"> c. Fico paralisado inicialmente, mas depois procuro ajuda.</label><br>
+                <label><input type="radio" name="questao2" value="d"> d. Evito o desafio até que eu esteja pronto para lidar com ele.</label>
+            </div>
+        </div>
+    
+        <div class="questao-container" id="questao3" style="display:none;">
+            <div class="questao">
+                <h2>3. Qual é sua forma preferida de relaxar após um dia estressante?</h2>
+                <label><input type="radio" name="questao3" value="a"> a. Praticar exercícios físicos ou esportes.</label><br>
+                <label><input type="radio" name="questao3" value="b"> b. Meditar ou fazer algo tranquilo, como ler um livro.</label><br>
+                <label><input type="radio" name="questao3" value="c"> c. Passar tempo com amigos ou familiares.</label><br>
+                <label><input type="radio" name="questao3" value="d"> d. Assistir a filmes ou séries para distrair a mente.</label>
+            </div>
+        </div>
+    
+        <div class="questao-container" id="questao4" style="display:none;">
+            <div class="questao">
+                <h2>4. Quando você enfrenta um erro pessoal, o que você faz?</h2>
+                <label><input type="radio" name="questao4" value="a"> a. Reconheço o erro e trabalho para corrigir rapidamente.</label><br>
+                <label><input type="radio" name="questao4" value="b"> b. Reflito sobre o que posso aprender e como posso melhorar.</label><br>
+                <label><input type="radio" name="questao4" value="c"> c. Fico frustrado comigo mesmo, mas tento seguir em frente.</label><br>
+                <label><input type="radio" name="questao4" value="d"> d. Converso com outras pessoas para entender diferentes perspectivas.</label>
+            </div>
+        </div>
+    
+        <div class="questao-container" id="questao5" style="display:none;">
+            <div class="questao">
+                <h2>5. Como você toma decisões importantes em sua vida?</h2>
+                <label><input type="radio" name="questao5" value="a"> a. Sigo minha intuição e sentimentos.</label><br>
+                <label><input type="radio" name="questao5" value="b"> b. Analiso todas as informações e procuro a solução mais lógica.</label><br>
+                <label><input type="radio" name="questao5" value="c"> c. Peço conselhos de pessoas em quem confio.</label><br>
+                <label><input type="radio" name="questao5" value="d"> d. Pondero os prós e contras e tomo uma decisão com base no que parece certo no momento.</label>
+            </div>
+        </div>
+    
+        <div class="questao-container" id="questao6" style="display:none;">
+            <div class="questao">
+                <h2>6. O que mais te motiva a alcançar seus objetivos?</h2>
+                <label><input type="radio" name="questao6" value="a"> a. A sensação de realização pessoal.</label><br>
+                <label><input type="radio" name="questao6" value="b"> b. O reconhecimento e aprovação dos outros.</label><br>
+                <label><input type="radio" name="questao6" value="c"> c. A oportunidade de aprender e evoluir.</label><br>
+                <label><input type="radio" name="questao6" value="d"> d. A possibilidade de superar desafios e provar minha capacidade.</label>
+            </div>
+        </div>
+    
+        <div class="questao-container" id="questao7" style="display:none;">
+            <div class="questao">
+                <h2>7. Como você costuma se sentir em relação ao futuro?</h2>
+                <label><input type="radio" name="questao7" value="a"> a. Estou otimista e acredito que as coisas vão melhorar.</label><br>
+                <label><input type="radio" name="questao7" value="b"> b. Sinto-me inseguro e preocupado com o que pode acontecer.</label><br>
+                <label><input type="radio" name="questao7" value="c"> c. Tento não pensar muito sobre o futuro e me concentro no presente.</label><br>
+                <label><input type="radio" name="questao7" value="d"> d. Tenho um plano, mas sei que precisarei me adaptar às mudanças.</label>
+            </div>
+        </div>
+
+        <button id="btnProximo" onclick="mostrarProxima()"><img src="icons/arrow_forward_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+    </div>
+
+    <div id="resultados" style="display:none;"></div>
+
+</main>
+
+    <footer>
+        <p>&copy; [2024] [QUIZ PERFIL PROFISSIONAL]. Todos os direitos reservados.
+            <br>Termos de Uso | Política de Privacidade | Contato
+           <br> Siga-nos nas redes sociais.</p>
+    </footer>
+
+    <!-- Modal para Resolução de Problemas -->
+<!-- Modal de Resolução de Problemas e Análise -->
+<div id="myModalResolucao" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModalResolucao()">&times;</span>
+        <h3>PERFIL PSICOLÓGICO: ANALÍTICO E RESOLUTIVO</h3>
+        <h4>Você tem uma forte capacidade de análise e resolução de problemas.</h4>
+        <h4>É uma pessoa lógica, que gosta de entender profundamente as situações antes de agir.</h4>
+        <h3>TRAÇOS PRINCIPAIS</h3>
+        <h4><b>Raciocínio lógico:</b> Você tende a abordar situações com uma mentalidade objetiva e focada na solução.</h4>
+        <h4><b>Resiliência:</b> Mesmo diante de desafios complexos, você mantém a calma e busca soluções práticas.</h4>
+        <h3>ÁREAS DE DESENVOLVIMENTO</h4>
+        <h4>Embora sua abordagem analítica seja eficaz, às vezes pode ser útil trabalhar em sua flexibilidade emocional para lidar com situações em que as soluções não são imediatas.</h4>
+    </div>
+</div>
+
+<!-- Modal de Organização e Planejamento -->
+<div id="myModalOrganiza" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModalOrganiza()">&times;</span>
+        <h3>PERFIL PSICOLÓGICO: ESTRUTURADO E ORGANIZADO</h3>
+        <h4>Você é uma pessoa metódica, que valoriza a ordem e o planejamento.</h4>
+        <h4>Ambientes organizados e previsíveis são essenciais para seu bem-estar.</h4>
+        <h3>TRAÇOS PRINCIPAIS</h3>
+        <h4><b>Planejamento detalhado:</b> Você gosta de pensar antecipadamente e garantir que tudo esteja sob controle.</h4>
+        <h4><b>Disciplina:</b> Você tem uma excelente capacidade de seguir planos e rotinas, mantendo o foco em metas claras.</h4>
+        <h3>ÁREAS DE DESENVOLVIMENTO</h3>
+        <h4>Desafios podem surgir em ambientes onde a flexibilidade e a improvisação são necessárias. Trabalhar em sua adaptabilidade pode ampliar suas habilidades.</h4>
+    </div>
+</div>
+
+<!-- Modal de Colaboração e Comunicação -->
+<div id="myModalColaboracao" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModalColaboracao()">&times;</span>
+        <h3>PERFIL PSICOLÓGICO: SOCIAL E COMUNICATIVO</h3>
+        <h4>Você tem facilidade em se comunicar e colaborar com os outros.</h4>
+        <h4>É uma pessoa empática, que valoriza a troca de ideias e o trabalho em equipe.</h4>
+        <h3>TRAÇOS PRINCIPAIS</h3>
+        <h4><b>Empatia:</b> Você é sensível às emoções dos outros e se esforça para criar um ambiente harmonioso.</h4>
+        <h4><b>Habilidade de comunicação:</b> Você sabe como transmitir ideias claramente e criar conexões com as pessoas ao seu redor.</h4>
+        <h3>ÁREAS DE DESENVOLVIMENTO</h3>
+        <h4>Embora suas habilidades sociais sejam fortes, pode ser útil desenvolver sua capacidade de trabalhar sozinho, quando necessário, para manter o equilíbrio.</h4>
+    </div>
+</div>
+
+<!-- Modal de Criatividade e Inovação -->
+<div id="myModalCriatividade" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModalCriatividade()">&times;</span>
+        <h3>PERFIL PSICOLÓGICO: CRIATIVO E INOVADOR</h3>
+        <h4>Você possui uma mente criativa e inovadora, sempre buscando novas formas de fazer as coisas.</h4>
+        <h4>Gosta de explorar possibilidades e experimentar ideias fora do comum.</h4>
+        <h3>TRAÇOS PRINCIPAIS</h3>
+        <h4><b>Originalidade:</b> Você vê o mundo de uma maneira única e gosta de propor soluções criativas para problemas.</h4>
+        <h4><b>Espírito inovador:</b> É uma pessoa que busca constantemente novas abordagens e se destaca em contextos que valorizam a inovação.</h4>
+        <h3>ÁREAS DE DESENVOLVIMENTO</h3>
+        <h4>Embora sua criatividade seja uma grande vantagem, pode ser útil equilibrá-la com habilidades práticas e de planejamento para garantir que suas ideias se concretizem de maneira eficaz.</h4>
+    </div>
+</div>
+
+
+</body>
+</html>
